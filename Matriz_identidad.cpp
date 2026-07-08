@@ -5,7 +5,7 @@ int main (){
 	
 	int n;
 	
-	cout << "Ingrese el valor de n para una matriz nxn"<<;
+	cout << "Ingrese el valor de n para una matriz nxn: ";
 	cin >> n;
 	
 	int matriz [100][100];
