@@ -2,9 +2,38 @@
 using namespace std;
 int main(){
 	int m, n;
-	cout << "Ingrese el numero de filas (m): ";
-	cin >> m;
-	cout << "Ingrese el numero de columnas (n): ";
-	cin >> n;
 	
+	do {
+		cout << "Ingrese el numero de filas (m): ";
+		cin >> m;
+	} while(m < 1 || m > 20);
+
+	do{
+		cout << "Ingrese el numero de columnas (n): ";
+		cin >> n
+	} while(n < 1 || n > 20);
+
+	cout << "---INGRESO DE DATOS---"<< endl;
+	for(int i = 0; i < m; i++){
+		for(int j = 0; i < n; j++){
+			cout <<"Ingrese datos para[" << i << " ][" << j << "]: ";
+			cin >> matriz[i][j];
+		}
+	}
+
+	cout << "---MATRIZ ORIGINAL---" << endl;
+	for(int i = 0; i < m; i++){
+		for(int i = 0; i < m; i++){
+			cout << matriz[i][j] << "\t"
+		}
+		cout << endl;
+	}
+	cout << "---MATRIZ TRANSPUESTA---" << endl;
+	for(int i = 0; i < m; i++){
+		for(int j = 0; j < n; j++){
+			cout << matrix[i][j] << "\t";
+		}
+		cout << endl;
+	}
+	return 0;
 }
